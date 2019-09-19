@@ -10,4 +10,4 @@ $Cred = New-Object System.Management.Automation.PsCredential($applicationId,$pas
 Connect-AzAccount -ServicePrincipal -Credential $Cred -Tenant $tenantid
 
 Get-AzSubscription
-Select-AzureSubscription -Default -SubscriptionName ""JOBS-PROD-AZURE
+Select-AzureSubscription -Default -SubscriptionName "JOBS-PROD-AZURE"
