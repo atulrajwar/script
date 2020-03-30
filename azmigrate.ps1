@@ -83,11 +83,11 @@ New-AzNetworkInterface -Name 'fweda-nic' -ResourceGroupName $RGname -SubnetId $v
     $pmember = $prividledgeMember
 
     Write-Host "Setting subscription scope"
-    $applicationId = "5b49358a-1b9e-4f4c-b514-de803f76c0de"
-    $pass="abc123"
+    $applicationId = "5b49358a-1b9e-4f4c-b66666666666"
+    $pass="ddfdffgrr"
     $password=$pass|ConvertTo-SecureString -AsPlainText -Force
     $Cred = New-Object System.Management.Automation.PsCredential($applicationId,$password)
-    Connect-AzAccount -ServicePrincipal -Credential $Cred -Tenant "1349700e-9024-4337-a837-c59977781d97"
+    Connect-AzAccount -ServicePrincipal -Credential $Cred -Tenant "13497337-c59977781d97"
     
     
    
